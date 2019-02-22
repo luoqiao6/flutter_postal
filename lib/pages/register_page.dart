@@ -4,16 +4,16 @@ import 'package:flutter_postal/utils/colors.dart';
 import 'package:flutter_postal/utils/textStyles.dart';
 import 'package:flutter_postal/widgets/postal_bottom_app_bar.dart';
 
-class ProfilePage extends StatefulWidget {
+class RegisterPage extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
 
-    return _ProfilePageState();
+    return _RegisterPageState();
   }
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _RegisterPageState extends State<RegisterPage> {
 
   @override
   Widget build(BuildContext context) {
