@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_postal/pages/welcome_page.dart';
+import 'package:flutter_postal/pages/profile_page.dart';
 
 
 void main() => runApp(PostalApp());
@@ -13,7 +14,7 @@ class PostalApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WelcomePage(),
+      home: ProfilePage(),//WelcomePage(),
     );
   }
 }

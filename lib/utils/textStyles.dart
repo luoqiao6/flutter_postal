@@ -19,7 +19,12 @@ class PostalTextStyles {
     fontWeight: FontWeight.w500,
   );
 
-
+  static const googleSansMedium15White = TextStyle(
+    color: PostalColors.white,
+    fontSize: 15,
+    fontFamily: 'GoogleSans-Medium',
+    //fontWeight: FontWeight.bold,
+  );
 
 
 
