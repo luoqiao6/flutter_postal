@@ -12,7 +12,7 @@ class PostalTextStyles {
     fontWeight: FontWeight.bold,
   );
 
-  static const googleSansMedium15Blue = TextStyle(
+  static const googleSansMedium15GrayBlue = TextStyle(
     color: PostalColors.grayBlue,
     fontSize: 15,
     fontFamily: 'GoogleSans-Medium',
@@ -24,6 +24,13 @@ class PostalTextStyles {
     fontSize: 15,
     fontFamily: 'GoogleSans-Medium',
     //fontWeight: FontWeight.bold,
+  );
+
+  static const googleSansMedium15Blue = TextStyle(
+    color: PostalColors.blue,
+    fontSize: 15,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w500,
   );
 
 

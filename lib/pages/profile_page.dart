@@ -84,21 +84,21 @@ Store your GoPostaI in the cloud and have them backed up automatically
                 Padding(
                   padding: EdgeInsets.only(top: 24),
                   child: Container(
-                    child: Text('Store your GoPostaI in the cloud', style: PostalTextStyles.googleSansMedium15Blue,),
+                    child: Text('Store your GoPostaI in the cloud', style: PostalTextStyles.googleSansMedium15GrayBlue,),
                   ),
                 ),
 
                 Padding(
                   padding: EdgeInsets.only(top: 2),
                   child: Container(
-                    child: Text('and have them backed up', style: PostalTextStyles.googleSansMedium15Blue,),
+                    child: Text('and have them backed up', style: PostalTextStyles.googleSansMedium15GrayBlue,),
                   ),
                 ),
 
                 Padding(
                   padding: EdgeInsets.only(top: 2),
                   child: Container(
-                    child: Text('automatically', style: PostalTextStyles.googleSansMedium15Blue,),
+                    child: Text('automatically', style: PostalTextStyles.googleSansMedium15GrayBlue,),
                   ),
                 ),
 
@@ -123,6 +123,12 @@ Store your GoPostaI in the cloud and have them backed up automatically
                   ),
                 ),
 
+                Padding(
+                  padding: EdgeInsets.only(top: 14),
+                  child: Container(
+                    child: Text('I have an account', style: PostalTextStyles.googleSansMedium15Blue,),
+                  ),
+                ),
 
               ],
 

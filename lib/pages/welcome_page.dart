@@ -68,21 +68,21 @@ class _WelcomePageState extends State<WelcomePage> {
                 Padding(
                   padding: EdgeInsets.only(top: 24),
                   child: Container(
-                    child: Text('Wa are here to help you to get', style: PostalTextStyles.googleSansMedium15Blue,),
+                    child: Text('Wa are here to help you to get', style: PostalTextStyles.googleSansMedium15GrayBlue,),
                   ),
                 ),
 
                 Padding(
                   padding: EdgeInsets.only(top: 2),
                   child: Container(
-                    child: Text('the better shipping service', style: PostalTextStyles.googleSansMedium15Blue,),
+                    child: Text('the better shipping service', style: PostalTextStyles.googleSansMedium15GrayBlue,),
                   ),
                 ),
 
                 Padding(
                   padding: EdgeInsets.only(top: 20),
                   child: Container(
-                    child: Text('To track your first package press', style: PostalTextStyles.googleSansMedium15Blue,),
+                    child: Text('To track your first package press', style: PostalTextStyles.googleSansMedium15GrayBlue,),
                   ),
                 ),
 
