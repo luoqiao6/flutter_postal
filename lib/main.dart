@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_postal/pages/welcome_page.dart';
 import 'package:flutter_postal/pages/register_page.dart';
-
+import 'package:flutter_postal/pages/user_page.dart';
 
 void main() => runApp(PostalApp());
 
@@ -14,7 +14,7 @@ class PostalApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RegisterPage(),//WelcomePage(),
+      home: UserPage(),//RegisterPage(),//WelcomePage(),
     );
   }
 }
