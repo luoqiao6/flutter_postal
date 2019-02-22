@@ -29,7 +29,7 @@ class _UserPageState extends State<UserPage> {
             child: Column(
               children: <Widget>[
                 Stack(
-                  alignment: AlignmentDirectional.center,
+                  //alignment: AlignmentDirectional.topCenter,
                   children: <Widget>[
 
                     Container(
@@ -45,11 +45,11 @@ class _UserPageState extends State<UserPage> {
                     ),
 
                     Container(
-                      padding: EdgeInsets.only(top: 0),
-                      //alignment: AlignmentDirectional.center,
+                      padding: EdgeInsets.only(top: 80),
+                      alignment: AlignmentDirectional.center,
                       //color: PostalColors.blue,
                       child: CircleAvatar(
-                        radius: 73,
+                        radius: 71,
                         backgroundColor: PostalColors.white,
 
                         child: SvgPicture.asset(
@@ -59,32 +59,6 @@ class _UserPageState extends State<UserPage> {
                         ),
                       ),
                     ),
-
-//                    Container(
-//                      padding: EdgeInsets.only(top: 0),
-//                      alignment: AlignmentDirectional.center,
-//                      //color: PostalColors.blue,
-//                      child: Container(
-//                        width: 144,
-//                        height: 144,
-//                        padding: EdgeInsets.only(top: 80),
-//                        decoration: BoxDecoration(
-//                          color: Colors.white,
-////                            border: Border.all(
-////                              color: PostalColors.green,
-////                              width: 2,
-////                            ),
-//                          shape: BoxShape.circle
-//                        ),
-//                        child: SvgPicture.asset(
-//                          'res/images/man_img.svg',
-//                          //width: screenWidth,
-//                          height: 181,
-//                          width: 92,
-//                        ),
-//                      ),
-//                    ),
-
 
 
 
