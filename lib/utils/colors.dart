@@ -9,6 +9,14 @@ class PostalColors {
   static const Color white = Color.fromARGB(255, 255, 255, 255);
   static const Color extraLightBlue = Color.fromARGB(255, 247, 247, 250);
   static const Color extraLightPurple = Color.fromARGB(255, 223, 215, 232);
+  static const Color extraLightBlue209 = Color.fromARGB(255, 209, 208, 223);
+  static const Color extraLightBlue247 = Color.fromARGB(255, 247, 247, 250);
+
+  static const Color black242 = Color.fromARGB(255, 242, 242, 242);
+
+  static const Color croci = Color.fromARGB(255, 252, 199, 48);
+  static const Color jacinth = Color.fromARGB(255, 243, 115, 52);
+
 }
 
 
