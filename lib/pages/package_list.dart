@@ -25,16 +25,24 @@ class _PackageListState extends State<PackageList> {
       //backgroundColor: PostalColors.extraLightBlue247,
       body: Stack(
         children: <Widget>[
+
+          /// Title and Card List
           Center(
             child: Padding(
               padding: EdgeInsets.only(left: 20, right: 20),
               child: CustomScrollView(
                 slivers: <Widget>[
+
+                  SliverPadding(
+                    padding: EdgeInsets.only(top: 50),
+                  ),
+
+                  /// Title
                   SliverList(
                     delegate: SliverChildListDelegate([
                       Container(
                         alignment: Alignment.center,
-                        padding: EdgeInsets.only(top: 50),
+                        //padding: EdgeInsets.only(top: 50),
                         child: Text(
                           'Packages',
                           style: PostalTextStyles.googleSansMedium29Blue,
@@ -42,11 +50,19 @@ class _PackageListState extends State<PackageList> {
                       ),
                     ]),
                   ),
+
+                  SliverPadding(
+                    padding: EdgeInsets.only(top: 70),
+                  ),
+
+                  /// Card List
                   SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (BuildContext context, int index) {
+
                         Widget icon;
                         String title;
+
                         if (index % 2 == 1) {
                           title = 'Surface Studio';
                           icon = Container(
@@ -71,8 +87,7 @@ class _PackageListState extends State<PackageList> {
                         return Stack(
                           children: <Widget>[
                             Container(
-                              padding: EdgeInsets.only(
-                                  left: 2, right: 3, top: 5, bottom: 3),
+                              padding: EdgeInsets.only(left: 2, right: 3, top: 5, bottom: 3),
                               child: Container(
                                 height: 133,
                                 decoration: BoxDecoration(
@@ -324,8 +339,11 @@ class _PackageListState extends State<PackageList> {
               ),
             ),
           ),
+
+          /// Filter List
+
           Padding(
-            padding: EdgeInsets.only(top: 100),
+            padding: EdgeInsets.only(top: 104),
             child: Container(
               height: 33,
               child: CustomScrollView(
