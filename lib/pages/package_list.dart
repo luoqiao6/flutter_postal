@@ -99,27 +99,22 @@ class _PackageListState extends State<PackageList> {
 //                                    color: PostalColors.extraLightBlue227,
 //                                  ),
                                 ),
+
                                 child: Column(
                                   children: <Widget>[
                                     Padding(
-                                      padding: EdgeInsets.only(
-                                          left: 8,
-                                          right: 8,
-                                          top: 8,
-                                          bottom: 10),
+                                      padding: EdgeInsets.only(left: 16, right: 8, top: 16, bottom: 10),
                                       child: Container(
                                         alignment: Alignment.centerLeft,
                                         child: Text(
                                           title,
-                                          style: PostalTextStyles
-                                              .googleSansMedium18BlueW600,
+                                          style: PostalTextStyles.googleSansMedium18BlueW600,
                                         ),
                                       ),
                                     ),
 
                                     Padding(
-                                      padding: EdgeInsets.only(
-                                          left: 8, right: 8, bottom: 10),
+                                      padding: EdgeInsets.only(left: 16, right: 16, bottom: 10),
                                       child: Row(
                                         children: <Widget>[
                                           Expanded(
@@ -128,8 +123,7 @@ class _PackageListState extends State<PackageList> {
                                               alignment: Alignment.centerLeft,
                                               child: Text(
                                                 'Jul 12, 2018',
-                                                style: PostalTextStyles
-                                                    .googleSansMedium12BlueW600,
+                                                style: PostalTextStyles.googleSansMedium12BlueW600,
                                               ),
                                             ),
                                           ),
@@ -139,8 +133,7 @@ class _PackageListState extends State<PackageList> {
                                               alignment: Alignment.centerRight,
                                               child: Text(
                                                 '16:00',
-                                                style: PostalTextStyles
-                                                    .googleSansMedium12BlueW600,
+                                                style: PostalTextStyles.googleSansMedium12BlueW600,
                                               ),
                                             ),
                                           ),
@@ -150,8 +143,7 @@ class _PackageListState extends State<PackageList> {
                                               alignment: Alignment.center,
                                               child: Text(
                                                 '--',
-                                                style: PostalTextStyles
-                                                    .googleSansMedium12BlueW600,
+                                                style: PostalTextStyles.googleSansMedium12BlueW600,
                                               ),
                                             ),
                                           ),
@@ -161,8 +153,7 @@ class _PackageListState extends State<PackageList> {
                                               alignment: Alignment.centerLeft,
                                               child: Text(
                                                 '19:00',
-                                                style: PostalTextStyles
-                                                    .googleSansMedium12BlueW600,
+                                                style: PostalTextStyles.googleSansMedium12BlueW600,
                                               ),
                                             ),
                                           ),
@@ -172,8 +163,7 @@ class _PackageListState extends State<PackageList> {
                                               alignment: Alignment.centerRight,
                                               child: Text(
                                                 '00000US5576',
-                                                style: PostalTextStyles
-                                                    .googleSansMedium12BlueW600,
+                                                style: PostalTextStyles.googleSansMedium12BlueW600,
                                               ),
                                             ),
                                           ),
@@ -189,8 +179,7 @@ class _PackageListState extends State<PackageList> {
                                         decoration: BoxDecoration(
                                           border: Border(
                                             bottom: BorderSide(
-                                              color: PostalColors
-                                                  .extraLightBlue230,
+                                              color: PostalColors.extraLightBlue230,
                                               width: 1,
                                             ),
                                           ),
@@ -201,18 +190,13 @@ class _PackageListState extends State<PackageList> {
                                     /// ////
 
                                     Padding(
-                                      padding: EdgeInsets.only(
-                                          top: 10,
-                                          left: 8,
-                                          right: 8,
-                                          bottom: 8),
+                                      padding: EdgeInsets.only(top: 10, left: 16, right: 12, bottom: 8),
                                       child: Container(
                                         width: printWidth,
                                         child: Row(
                                           children: <Widget>[
                                             Padding(
-                                              padding: EdgeInsets.only(
-                                                  left: 0, right: 10),
+                                              padding: EdgeInsets.only(left: 0, right: 10),
                                               child: icon,
 //                                              Container(
 //                                                child: SvgPicture.asset(
@@ -227,68 +211,59 @@ class _PackageListState extends State<PackageList> {
 
                                             Column(
                                               children: <Widget>[
+
                                                 Padding(
-                                                  padding: EdgeInsets.only(
-                                                      bottom: 6),
+                                                  padding: EdgeInsets.only(bottom: 6),
                                                   child: Row(
                                                     children: <Widget>[
                                                       Container(
                                                         width: 11,
                                                         height: 11,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color:
-                                                              PostalColors.red,
-                                                          shape:
-                                                              BoxShape.circle,
+                                                        decoration: BoxDecoration(
+                                                          color: PostalColors.red,
+                                                          shape: BoxShape.circle,
                                                         ),
                                                       ),
                                                       Container(
                                                         width: 158,
                                                         height: 3,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                                border: Border(
-                                                                    bottom:
-                                                                        BorderSide(
-                                                          color: PostalColors
-                                                              .extraLightBlue230,
-                                                          style:
-                                                              BorderStyle.solid,
-                                                          width: 2,
-                                                        ))),
+                                                        decoration: BoxDecoration(
+                                                          border: Border(
+                                                            bottom: BorderSide(
+                                                              color: PostalColors.extraLightBlue230,
+                                                              style: BorderStyle.solid,
+                                                              width: 2,
+                                                            ),
+                                                          ),
+                                                        ),
                                                       ),
                                                       Container(
                                                         width: 11,
                                                         height: 11,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                                //color: PostalColors.white,
-                                                                shape: BoxShape
-                                                                    .circle,
-                                                                border:
-                                                                    Border.all(
-                                                                  color: PostalColors
-                                                                      .extraLightBlue139,
-                                                                  width: 2,
-                                                                )),
+                                                        decoration: BoxDecoration(
+                                                          //color: PostalColors.white,
+                                                          shape: BoxShape.circle,
+                                                          border: Border.all(
+                                                            color: PostalColors.extraLightBlue139,
+                                                            width: 2,
+                                                          ),
+                                                        ),
                                                       ),
                                                     ],
                                                   ),
                                                 ),
+
                                                 Container(
-                                                  width: printWidth - 51,
+                                                  width: printWidth - 54,
                                                   child: Row(
                                                     children: <Widget>[
                                                       Expanded(
                                                         flex: 1,
                                                         child: Container(
-                                                          alignment: Alignment
-                                                              .centerRight,
+                                                          alignment: Alignment.centerRight,
                                                           child: Text(
                                                             '811 Orlancdo, FL',
-                                                            style: PostalTextStyles
-                                                                .googleSansMedium12ExtraBlue139W600,
+                                                            style: PostalTextStyles.googleSansMedium12ExtraBlue139W600,
                                                             //textAlign: TextAlign.center,
                                                           ),
                                                         ),
@@ -296,12 +271,10 @@ class _PackageListState extends State<PackageList> {
                                                       Expanded(
                                                         flex: 1,
                                                         child: Container(
-                                                          alignment: Alignment
-                                                              .centerRight,
+                                                          alignment: Alignment.centerRight,
                                                           child: Text(
                                                             '389 Miami, FL',
-                                                            style: PostalTextStyles
-                                                                .googleSansMedium12ExtraBlue139W600,
+                                                            style: PostalTextStyles.googleSansMedium12ExtraBlue139W600,
                                                           ),
                                                         ),
                                                       ),
