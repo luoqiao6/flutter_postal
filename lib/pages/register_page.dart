@@ -137,7 +137,7 @@ Store your GoPostaI in the cloud and have them backed up automatically
 
           Positioned(
             bottom: 0,
-            child: PostalBottomAppBar(),
+            child: PostalBottomAppBar(isUserIconActive: true,),
           ),
 
         ],
