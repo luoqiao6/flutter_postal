@@ -5,14 +5,14 @@ import 'package:flutter_postal/utils/textStyles.dart';
 import 'package:flutter_postal/widgets/postal_bottom_app_bar.dart';
 import 'package:flutter_postal/widgets/filter_chip_list.dart';
 
-class PackageList extends StatefulWidget {
+class PackageListPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _PackageListState();
+    return _PackageListPageState();
   }
 }
 
-class _PackageListState extends State<PackageList> {
+class _PackageListPageState extends State<PackageListPage> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;

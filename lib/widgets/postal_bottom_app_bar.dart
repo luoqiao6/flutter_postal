@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_postal/utils/colors.dart';
 import 'package:flutter_postal/utils/textStyles.dart';
+import 'package:flutter_postal/pages/package_list.dart';
+import 'package:flutter_postal/pages/user_page.dart';
 
 class PostalBottomAppBar extends StatefulWidget {
   final isPackageIconActive;
@@ -155,7 +157,14 @@ class _PostalBottomAppBarState extends State<PostalBottomAppBar> {
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(right: 4),
-              child: widget.isPackageIconActive ? activePackageIcon : inActivePackageIcon,
+              child: GestureDetector(
+                onTap: () {
+                  print('package list');
+
+                  Navigator.of(context).pushReplacementNamed('/package_list');
+                },
+                child: widget.isPackageIconActive ? activePackageIcon : inActivePackageIcon,
+              ),
 //              Container(
 //                alignment: Alignment.centerRight,
 //                height: 33.66,
@@ -172,22 +181,32 @@ class _PostalBottomAppBarState extends State<PostalBottomAppBar> {
           ),
 
           Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-              ),
-              child: SvgPicture.asset(
-                'res/images/add_icon.svg',
-                //width: screenWidth,
-                //height: _imgHeight,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/new');
+              },
+          child: Container(
+            decoration: BoxDecoration(
+            ),
+            child: SvgPicture.asset(
+              'res/images/add_icon.svg',
+              //width: screenWidth,
+              //height: _imgHeight,
               ),
             ),
+          ),
           ),
 
 
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(left: 4),
-              child: widget.isUserIconActive ? activeUserIcon : inActiveUserIcon,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushReplacementNamed('/register');
+                },
+                child: widget.isUserIconActive ? activeUserIcon : inActiveUserIcon,
+              ),
 //              Container(
 //                height: 24.68,
 //                alignment: Alignment.centerLeft,

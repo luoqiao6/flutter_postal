@@ -14,10 +14,18 @@ class PostalApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      routes: {
+        '/welcome': (BuildContext context) => WelcomePage(),
+        '/package_list': (BuildContext context) => PackageListPage(),
+        '/new': (BuildContext context) => NewTrackPage(),
+        '/register': (BuildContext context) => RegisterPage(),
+        '/user': (BuildContext context) => UserPage(),
+      },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PackageList(),//NewTrackPage(),//UserPage(),//RegisterPage(),//WelcomePage(),
+      home: WelcomePage(),
+      //PackageList(),//NewTrackPage(),//UserPage(),//RegisterPage(),//WelcomePage(),
     );
   }
 }
