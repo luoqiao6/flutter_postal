@@ -388,67 +388,11 @@ class _PackageListState extends State<PackageList> {
                         ),
                       ),
 
-//                          Padding(
-//                            padding: EdgeInsets.only(right: 10),
-//                            child: Chip(
-//                              backgroundColor: PostalColors.white,
-//                              label: Text('All', style: PostalTextStyles.googleSansMedium14BlueW600,),
-//                            ),
-//                          ),
-//
-//                          Padding(
-//                            padding: EdgeInsets.only(right: 10),
-//                            child: Chip(
-//                              backgroundColor: PostalColors.green,
-//                              label: Text('PACKING', style: PostalTextStyles.googleSansMedium14WhiteW600,),
-//                            ),
-//                          ),
-//
-//                          Padding(
-//                            padding: EdgeInsets.only(right: 10),
-//                            child: Chip(
-//                              backgroundColor: PostalColors.white,
-//                              label: Text('DELIVERED', style: PostalTextStyles.googleSansMedium14BlueW600,),
-//                            ),
-//                          ),
-//
-//                          Padding(
-//                            padding: EdgeInsets.only(right: 10),
-//                            child: Chip(
-//                              backgroundColor: PostalColors.white,
-//                              label: Text('IN TRANSIT', style: PostalTextStyles.googleSansMedium14BlueW600,),
-//                            ),
-//                          ),
+
                     ]),
                   ),
+                  
 
-//                  SliverList(
-//                    delegate: SliverChildBuilderDelegate(
-//                          (BuildContext context, int index) {
-//
-//                            return Padding(
-//                              padding: EdgeInsets.only(right: 10),
-//                              child: Chip(
-//                                backgroundColor: PostalColors.white,
-//                                label: Text('Aaron Burr'),
-//                              ),
-//                            );
-//
-//
-////                        return Padding(
-////                          padding: EdgeInsets.only(right: 10),
-////                          child: Container(
-////                            height: 33,
-////                            width: 107,
-////                            color: PostalColors.jacinth,
-////                          ),
-////                        );
-//
-//                      },
-//
-//                      childCount: 8, ///
-//                    ),
-//                  ),
                 ],
               ),
             ),
