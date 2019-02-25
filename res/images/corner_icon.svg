@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f37335"/>
+      <stop offset="1" stop-color="#fdc830"/>
+    </linearGradient>
+  </defs>
+  <g id="corner_icon" transform="translate(-313.786 -193)">
+    <path id="corner_icon-2" data-name="corner_icon" d="M-196.756,65.97h33.418a6.285,6.285,0,0,1,6.285,6.285v33.418a6.284,6.284,0,0,1-10.728,4.443L-201.2,76.7A6.284,6.284,0,0,1-196.756,65.97Z" transform="translate(516.839 127.03)" fill="url(#linear-gradient)"/>
+    <path id="路径_73" data-name="路径 73" d="M-210.327,38.5l2.945,5.967,6.585.957-4.765,4.645,1.125,6.559-5.89-3.1-5.89,3.1,1.125-6.559-4.765-4.645,6.585-.957Z" transform="translate(553.857 159.504)" fill="#fff"/>
+  </g>
+</svg>

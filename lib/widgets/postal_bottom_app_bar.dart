@@ -4,6 +4,13 @@ import 'package:flutter_postal/utils/colors.dart';
 import 'package:flutter_postal/utils/textStyles.dart';
 
 class PostalBottomAppBar extends StatefulWidget {
+  final isPackageIconActive;
+  final isUserIconActive;
+
+  PostalBottomAppBar({
+    this.isPackageIconActive = false,
+    this.isUserIconActive = false,
+  });
 
   @override
   State<StatefulWidget> createState() {
@@ -18,28 +25,149 @@ class _PostalBottomAppBarState extends State<PostalBottomAppBar> {
   @override
   Widget build(BuildContext context) {
 
+    Widget activePackageIcon = Container(
+      width: 52,
+      height: 52,
+      alignment: Alignment.topCenter,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            PostalColors.blue,
+            PostalColors.white,
+          ],
+
+        )
+      ),
+      child: Container(
+        alignment: Alignment.topCenter,
+        //height: 33.66,
+        width: 30.66,
+        decoration: BoxDecoration(
+        ),
+        child: SvgPicture.asset(
+          'res/images/package_icon.svg',
+          width: 30.66,
+          //height: _imgHeight,
+        ),
+      ),
+    );
+
+    Widget inActivePackageIcon = Container(
+      width: 52,
+      height: 52,
+      alignment: Alignment.topCenter,
+      decoration: BoxDecoration(
+          shape: BoxShape.circle,
+//          gradient: LinearGradient(
+//              begin: Alignment.topCenter,
+//              end: Alignment.bottomCenter,
+//              colors: [
+//                PostalColors.blue,
+//                PostalColors.white,
+//              ]
+//          )
+      ),
+      child: Container(
+        alignment: Alignment.topCenter,
+        //height: 33.66,
+        width: 30.66,
+        decoration: BoxDecoration(
+        ),
+        child: SvgPicture.asset(
+          'res/images/package_icon.svg',
+          width: 30.66,
+          //height: _imgHeight,
+        ),
+      ),
+    );
+
+    Widget activeUserIcon = Container(
+      width: 52,
+      height: 52,
+      alignment: Alignment.topCenter,
+      decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                PostalColors.blue,
+                PostalColors.white,
+              ]
+          )
+      ),
+      child: Container(
+        //height: 24.68,
+        width: 21.93,
+        padding: EdgeInsets.only(top: 6),
+        alignment: Alignment.topCenter,
+        decoration: BoxDecoration(
+        ),
+        child: SvgPicture.asset(
+          'res/images/user_icon.svg',
+          width: 21.93,
+          //height: _imgHeight,
+        ),
+      ),
+    );
+
+    Widget inActiveUserIcon = Container(
+      width: 52,
+      height: 52,
+      alignment: Alignment.topCenter,
+      decoration: BoxDecoration(
+          shape: BoxShape.circle,
+//          gradient: LinearGradient(
+//              begin: Alignment.topCenter,
+//              end: Alignment.bottomCenter,
+//              colors: [
+//                PostalColors.blue,
+//                PostalColors.white,
+//              ]
+//          )
+      ),
+      child: Container(
+        //height: 24.68,
+        width: 21.93,
+        padding: EdgeInsets.only(top: 6),
+        alignment: Alignment.topCenter,
+        decoration: BoxDecoration(
+        ),
+        child: SvgPicture.asset(
+          'res/images/user_icon.svg',
+          width: 21.93,
+          //height: _imgHeight,
+        ),
+      ),
+    );
+
     Widget content = Container(
       width: MediaQuery.of(context).size.width,
       height: 92,
       //color: PostalColors.green,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        //mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(right: 16),
-              child: Container(
-                alignment: Alignment.centerRight,
-                height: 33.66,
-                decoration: BoxDecoration(
-                ),
-                child: SvgPicture.asset(
-                  'res/images/package_icon.svg',
-                  //width: screenWidth,
-                  //height: _imgHeight,
-                ),
-              ),
+              padding: EdgeInsets.only(right: 4),
+              child: widget.isPackageIconActive ? activePackageIcon : inActivePackageIcon,
+//              Container(
+//                alignment: Alignment.centerRight,
+//                height: 33.66,
+//                decoration: BoxDecoration(
+//
+//                ),
+//                child: SvgPicture.asset(
+//                  'res/images/package_icon.svg',
+//                  //width: screenWidth,
+//                  //height: _imgHeight,
+//                ),
+//              ),
             ),
           ),
 
@@ -58,18 +186,19 @@ class _PostalBottomAppBarState extends State<PostalBottomAppBar> {
 
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(left: 16),
-              child: Container(
-                height: 24.68,
-                alignment: Alignment.centerLeft,
-                decoration: BoxDecoration(
-                ),
-                child: SvgPicture.asset(
-                  'res/images/user_icon.svg',
-                  //width: screenWidth,
-                  //height: _imgHeight,
-                ),
-              ),
+              padding: EdgeInsets.only(left: 4),
+              child: widget.isUserIconActive ? activeUserIcon : inActiveUserIcon,
+//              Container(
+//                height: 24.68,
+//                alignment: Alignment.centerLeft,
+//                decoration: BoxDecoration(
+//                ),
+//                child: SvgPicture.asset(
+//                  'res/images/user_icon.svg',
+//                  //width: screenWidth,
+//                  //height: _imgHeight,
+//                ),
+//              ),
             ),
           ),
 

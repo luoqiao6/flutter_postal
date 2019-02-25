@@ -45,7 +45,41 @@ class PostalTextStyles {
     fontSize: 15,
     fontFamily: 'GoogleSans-Medium',
     fontWeight: FontWeight.w600,
+  );
 
+  static const googleSansMedium12BlueW600 = TextStyle(
+    color: PostalColors.blue,
+    fontSize: 12,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w600,
+  );
+
+  static const googleSansMedium12ExtraBlue139W600 = TextStyle(
+    color: PostalColors.extraLightBlue139,
+    fontSize: 12,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w600,
+  );
+
+  static const googleSansMedium14BlueW600 = TextStyle(
+    color: PostalColors.blue,
+    fontSize: 14,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w600,
+  );
+
+  static const googleSansMedium14WhiteW600 = TextStyle(
+    color: PostalColors.white,
+    fontSize: 14,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w600,
+  );
+
+  static const googleSansMedium18BlueW600 = TextStyle(
+    color: PostalColors.blue,
+    fontSize: 18,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w600,
   );
 
   static const googleSansMedium29Blue = TextStyle(
@@ -67,8 +101,6 @@ class PostalTextStyles {
     fontSize: 16,
     fontFamily: 'GoogleSans-Medium',
     fontWeight: FontWeight.w500,
-
-
   );
 
 
