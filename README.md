@@ -4,7 +4,7 @@
 
 在 IPhone X 下开发，其他屏幕未做适配，页面显示可能有问题。
 
-UI 设计来自 [http://freebielobster.com/index.php/home/post/Postal-App-Ui-Freebie)，仅供学习使用。
+UI 设计来自 [http://freebielobster.com](http://freebielobster.com/index.php/home/post/Postal-App-Ui-Freebie)，仅供学习使用。
 
 
 ![welcome page](https://raw.githubusercontent.com/luoqiao6/flutter_postal/master/screenshot/welcome_page.png)
