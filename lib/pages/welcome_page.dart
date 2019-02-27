@@ -41,6 +41,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     Container(
                       padding: EdgeInsets.only(top: 0),
                       //color: PostalColors.blue,
+                      alignment: Alignment.center,
                       child: Container(
                         padding: EdgeInsets.only(top: 88),
                         decoration: BoxDecoration(
