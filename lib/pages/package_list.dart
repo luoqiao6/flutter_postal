@@ -30,7 +30,7 @@ class _PackageListPageState extends State<PackageListPage> {
           /// Title and Card List
           Center(
             child: Padding(
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 0, right: 0),
               child: CustomScrollView(
                 slivers: <Widget>[
 
@@ -52,39 +52,21 @@ class _PackageListPageState extends State<PackageListPage> {
                     ]),
                   ),
 
+
                   SliverPadding(
-                    padding: EdgeInsets.only(top: 70),
+                    padding: EdgeInsets.only(top: 30),
                   ),
 
-                  /// Card List
-                  SliverList(
-                    delegate: SliverChildBuilderDelegate(
-                      (BuildContext context, int index) {
+                  /// Filter Chips ////////////////////
 
-                        return PackageListItem(index: index, printWidth: printWidth,);
-                      },
+                  SliverGrid.extent(
+                    //crossAxisCount: 4,
+                    maxCrossAxisExtent: 107,
+                    childAspectRatio: 3.24,
+                    mainAxisSpacing: 20,
+                    crossAxisSpacing: 10,
 
-                      childCount: 30,
-
-                      ///
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-
-          /// Filter List
-
-          Padding(
-            padding: EdgeInsets.only(top: 104),
-            child: Container(
-              height: 33,
-              child: CustomScrollView(
-                scrollDirection: Axis.horizontal,
-                slivers: <Widget>[
-                  SliverList(
-                    delegate: SliverChildListDelegate([
+                    children: <Widget>[
                       Container(
                         width: 107,
                         height: 33,
@@ -150,14 +132,114 @@ class _PackageListPageState extends State<PackageListPage> {
                       ),
 
 
-                    ]),
+                    ],
                   ),
-                  
+
+
+                  /// Card List
+                  SliverPadding(
+                    padding: EdgeInsets.only(left: 20, right: 20, top: 30),
+                    sliver : SliverList(
+                      delegate: SliverChildBuilderDelegate(
+                            (BuildContext context, int index) {
+
+                          return PackageListItem(index: index, printWidth: printWidth,);
+                        },
+
+                        childCount: 30,
+                        ///
+                      ),
+                    ),
+                  ),
 
                 ],
               ),
             ),
           ),
+
+          /// Filter List
+//          Padding(
+//            padding: EdgeInsets.only(top: 104),
+//            child: Container(
+//              height: 33,
+//              child: CustomScrollView(
+//                scrollDirection: Axis.horizontal,
+//                slivers: <Widget>[
+//                  SliverList(
+//                    delegate: SliverChildListDelegate([
+//                      Container(
+//                        width: 107,
+//                        height: 33,
+//                        alignment: Alignment.center,
+//                        decoration: BoxDecoration(
+//                          color: PostalColors.white,
+//                          borderRadius: BorderRadius.all(
+//                            Radius.circular(33),
+//                          ),
+//                        ),
+//                        child: Text(
+//                          'All',
+//                          style: PostalTextStyles.googleSansMedium14BlueW600,
+//                        ),
+//                      ),
+//
+//                      Container(
+//                        width: 107,
+//                        height: 33,
+//                        alignment: Alignment.center,
+//                        decoration: BoxDecoration(
+//                          color: PostalColors.green,
+//                          borderRadius: BorderRadius.all(
+//                            Radius.circular(50),
+//                          ),
+//                        ),
+//                        child: Text(
+//                          'PACKING',
+//                          style: PostalTextStyles.googleSansMedium14WhiteW600,
+//                        ),
+//                      ),
+//
+//                      Container(
+//                        width: 107,
+//                        height: 33,
+//                        alignment: Alignment.center,
+//                        decoration: BoxDecoration(
+//                          color: PostalColors.white,
+//                          borderRadius: BorderRadius.all(
+//                            Radius.circular(33),
+//                          ),
+//                        ),
+//                        child: Text(
+//                          'DELIVERED',
+//                          style: PostalTextStyles.googleSansMedium14BlueW600,
+//                        ),
+//                      ),
+//
+//                      Container(
+//                        width: 107,
+//                        height: 33,
+//                        alignment: Alignment.center,
+//                        decoration: BoxDecoration(
+//                          color: PostalColors.white,
+//                          borderRadius: BorderRadius.all(
+//                            Radius.circular(33),
+//                          ),
+//                        ),
+//                        child: Text(
+//                          'IN TRANSIT',
+//                          style: PostalTextStyles.googleSansMedium14BlueW600,
+//                        ),
+//                      ),
+//
+//
+//                    ]),
+//                  ),
+//
+//
+//                ],
+//              ),
+//            ),
+//          ),
 
           Positioned(
             bottom: 0,
