@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_postal/utils/colors.dart';
 import 'package:flutter_postal/utils/textStyles.dart';
 import 'package:flutter_postal/widgets/postal_bottom_app_bar.dart';
-import 'package:flutter_postal/widgets/filter_chip_list.dart';
 import 'package:flutter_postal/widgets/package_list_item.dart';
 
 class PackageListPage extends StatefulWidget {
@@ -156,90 +155,6 @@ class _PackageListPageState extends State<PackageListPage> {
               ),
             ),
           ),
-
-          /// Filter List
-//          Padding(
-//            padding: EdgeInsets.only(top: 104),
-//            child: Container(
-//              height: 33,
-//              child: CustomScrollView(
-//                scrollDirection: Axis.horizontal,
-//                slivers: <Widget>[
-//                  SliverList(
-//                    delegate: SliverChildListDelegate([
-//                      Container(
-//                        width: 107,
-//                        height: 33,
-//                        alignment: Alignment.center,
-//                        decoration: BoxDecoration(
-//                          color: PostalColors.white,
-//                          borderRadius: BorderRadius.all(
-//                            Radius.circular(33),
-//                          ),
-//                        ),
-//                        child: Text(
-//                          'All',
-//                          style: PostalTextStyles.googleSansMedium14BlueW600,
-//                        ),
-//                      ),
-//
-//                      Container(
-//                        width: 107,
-//                        height: 33,
-//                        alignment: Alignment.center,
-//                        decoration: BoxDecoration(
-//                          color: PostalColors.green,
-//                          borderRadius: BorderRadius.all(
-//                            Radius.circular(50),
-//                          ),
-//                        ),
-//                        child: Text(
-//                          'PACKING',
-//                          style: PostalTextStyles.googleSansMedium14WhiteW600,
-//                        ),
-//                      ),
-//
-//                      Container(
-//                        width: 107,
-//                        height: 33,
-//                        alignment: Alignment.center,
-//                        decoration: BoxDecoration(
-//                          color: PostalColors.white,
-//                          borderRadius: BorderRadius.all(
-//                            Radius.circular(33),
-//                          ),
-//                        ),
-//                        child: Text(
-//                          'DELIVERED',
-//                          style: PostalTextStyles.googleSansMedium14BlueW600,
-//                        ),
-//                      ),
-//
-//                      Container(
-//                        width: 107,
-//                        height: 33,
-//                        alignment: Alignment.center,
-//                        decoration: BoxDecoration(
-//                          color: PostalColors.white,
-//                          borderRadius: BorderRadius.all(
-//                            Radius.circular(33),
-//                          ),
-//                        ),
-//                        child: Text(
-//                          'IN TRANSIT',
-//                          style: PostalTextStyles.googleSansMedium14BlueW600,
-//                        ),
-//                      ),
-//
-//
-//                    ]),
-//                  ),
-//
-//
-//                ],
-//              ),
-//            ),
-//          ),
 
           Positioned(
             bottom: 0,
